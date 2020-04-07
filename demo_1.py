@@ -51,7 +51,7 @@ print(a) """
         pass
 print(f(-2)) """
 
-def pow(x,n=2):
+""" def pow(x,n=2):
     s = 0
     f = 1
     while s < n:
@@ -59,4 +59,27 @@ def pow(x,n=2):
         s = s+1
     return f
 
-print(pow(2))
+print(pow(2)) """
+
+""" def sum(num):
+    s = 0
+    for i in num:
+        s = s + i
+    return s
+print(sum((1,2,3,4))) """
+
+""" def sum1(*num):
+    s = 0
+    for i in num:
+        s = s + i
+    return s
+print(sum1(1,2)) """
+
+def key(x,**k):
+    print(x,k)
+
+key('a',f = 'f',p = 'r')
+print(type({'f': 'f', 'p': 'r'}))
+
+l = {'f': 'f', 'p': 'r'}
+print(l["f"])
