@@ -84,4 +84,4 @@ print(type({'f': 'f', 'p': 'r'}))
 l = {'f': 'f', 'p': 'r'}
 print(l["f"])
 
-print()
+print('sd')
