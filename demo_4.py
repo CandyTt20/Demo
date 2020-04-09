@@ -26,3 +26,21 @@ next(gen_fib(5))
 # print(type(gen_fib(5)))
 
 
+def f(n):
+    a1 = 1
+    a2 = 1
+    s = 0
+    while s<n:
+        yield a1
+        a1,a2 = a2,a1+a2
+        s = s+1
+
+# print(next(f(5)))
+j = f(6)
+while True:
+    try:
+        x = next(j)
+        print('j:', x)
+    except StopIteration as e:
+        print('Generator return value:', e.value)
+        break
