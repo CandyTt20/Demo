@@ -1,7 +1,6 @@
-from progress.bar import Bar
-from time import sleep
-bar = Bar('Processing', max=20)
-for i in range(20):
-    sleep(0.5)
-    bar.next()
-bar.finish()
+def _not_divisible(n):
+    return lambda x: x % n > 0
+
+p = filter(_not_divisible(3), [1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+print(list(p))
